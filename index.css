@@ -1,4 +1,4 @@
-*{
+ *{
     box-sizing: border-box;
     margin: 0%;
  }
@@ -35,7 +35,12 @@
     aspect-ratio: 1/1;
     background-color: #222;
     border-radius: 50%;
-    transition: translate 0.05s ease-out;
+    transition: transform 0.05s ease-out;
+    will-change: transform;
+ }
+ .eye{
+    position: relative;
+    overflow: hidden;
  }
  .mouth{
     width: 8rem;
@@ -61,4 +66,12 @@
     font-size: 0.9rem;
     text-align: center;
     letter-spacing: 1px;
- }
+ } 
+.text-content {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
